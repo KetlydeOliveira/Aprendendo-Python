@@ -2,7 +2,7 @@
 nome = ("Seu nome")
 
 #Usando uma f-string para exibir uma mensagem personalizada na tela
-print = (f" E aí {nome}! Seu primeiro código está salvo")
+print (f" E aí {nome}! Seu primeiro código está salvo")
 
 #Condicional: O código faz uma pergunta e toma uma decisão baseada na resposta.
 
