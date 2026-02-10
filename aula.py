@@ -104,7 +104,7 @@ while tentativa != senha_correta and erros < 3:
     tentativa = input("Qual é a senha? ")
     
     # Se a senha digitada for diferente da correta, limpa a tela e soma 1 erro
-    if tentativa != senha_correta:
+    if tentativa !== senha_correta:
         erros = erros + 1
         os.system('clear') # Limpa a tela do terminal
         print("Senha incorreta!")
