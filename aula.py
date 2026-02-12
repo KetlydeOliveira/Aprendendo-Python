@@ -2,14 +2,14 @@
 nome = ("Seu nome")
 
 
-
+_______________________________//
 
 #Usando uma f-string para exibir uma mensagem personalizada na tela
 print (f" E aí {nome}! Seu primeiro código está salvo")
 
 
 
-
+_______________________________________________________________//
 
 #Condicional: O código faz uma pergunta e toma uma decisão baseada na resposta.
 
@@ -20,8 +20,7 @@ else:
     print ("Acesso negado")    
 
 
-
-
+________________________________________________________________________//
 
 
 
@@ -36,8 +35,7 @@ bool.         verdadeiro/falso.          ativo = "true"
 
 
 
-
-
+___________________________________________________________________________//
 
 
 
@@ -56,9 +54,7 @@ else:
      print ("Compra recusada!")
 
 
-
-
-
+_______________________________________________________________________//
 
 
 
@@ -84,9 +80,7 @@ else:
 
 
 
-
-
-
+______________________________________________________________________________________//
 
 
 #Sistema de Validação de Acesso com Limite de Tentativas.
@@ -116,3 +110,39 @@ if tentativa == senha_correta: # Se saiu porque a senha está certa
     print("Acesso concedido!")
 else: # Se saiu porque o erro chegou a 3
     print("Número de tentativas excedido. Conta bloqueada!")
+
+
+________________________________________________________________________//
+
+
+# --- PROGRAMA DE CÁLCULO DE IMC ---
+# Criado como parte dos meus estudos iniciais de Python
+# O objetivo é praticar entrada de dados, conversão de tipos e lógica condicional.
+
+# 1. Coletando os dados do usuário
+# Usamos float() porque peso e altura podem ter casas decimais
+nome = input("Digite seu nome: ")
+peso = float(input(f"Olá {nome}, digite seu peso em kg (ex: 70.5): "))
+altura = float(input("Agora, digite sua altura em metros (ex: 1.65): "))
+
+# 2. Realizando o cálculo
+# A fórmula do IMC é: peso dividido pela altura ao quadrado
+imc = peso / (altura ** 2)
+
+# 3. Classificando o resultado com a lógica condicional
+print(f"\n{nome}, seu IMC é {imc:.2f}") # :.2f formata para 2 casas decimais
+
+if imc < 18.5:
+    print("Classificação: Abaixo do peso")
+
+elif imc < 25:
+    print("Classificação: Peso normal (Parabéns!)")
+
+elif imc < 30:
+    print("Classificação: Sobrepeso")
+
+# O 'else' captura qualquer valor que não entrou nas condições acima (acima de 30)
+else:
+    print("Classificação: Obesidade")
+
+print("\n--- Fim do monitoramento ---")
